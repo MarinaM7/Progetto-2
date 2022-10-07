@@ -1,0 +1,298 @@
+/* IMPOSTAZIONI GENERALI */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    color: #000;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 400;
+    line-height: 1.8;
+    font-size: 1.5rem;
+}
+
+h1 {
+    line-height: 1.2;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+h4 {
+    background: rgb(108, 193, 226);
+    background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
+    color: white;
+
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.lni {
+    font-size: 25px;
+    color: red;
+}
+
+/* HEADER */
+
+header {
+    box-shadow: 2px 10px 20px 1px rgba(211, 211, 211, 1);
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+#top {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.menutenda ul {
+    list-style-type: none;
+    list-style: none;
+}
+
+header a {
+    font-weight: 300;
+    color: red;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.menutenda {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    padding-left: none;
+    margin-left: none;
+    list-style-type: none;
+    text-align: left;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.menutenda ul li h4 {
+    width: fit-content;
+    padding: 5px 10px;
+}
+
+.dropdown:active ul .menutenda {
+    visibility: visible;
+}
+
+
+/* MAIN */
+
+main section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+#bgimg {
+    color: white;
+    text-shadow: 1px 1px black;
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+
+#bgimg p {
+    margin-bottom: 20px;
+}
+
+#bgimg h4 {
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+#developer,
+#info,
+#bluestripe,
+#notebook {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#developer {
+    padding-top: 35px;
+}
+
+#info div {
+padding-bottom: 20px;
+}
+
+#notebook div {
+    padding-bottom: 20px;
+}
+
+
+/*BLUESTRIPE*/
+
+#bluestripe {
+    background-color: #0c0633;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#bluestripe h2,
+#bluestripe p {
+    margin-bottom: 25px;
+}
+
+#bluestripe h4 {
+    width: max-content;
+    padding: 10px 20px;
+    margin: 0;
+
+}
+
+#notebook img {
+    width: 350px;
+}
+
+
+/*************************Chi siamo***********************/
+
+
+#first img, #second img {
+    width: 350px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#chisiamo, #first, #second {
+    text-align: center;
+}
+
+table {
+    margin: 50px 20px;
+}
+
+table thead {
+    background-color: #7dacdf;
+}
+table tr td {
+    background-color: #d2dce7;
+}
+
+/*************************Contatti***********************/
+
+#contacts form input {
+    font-style: italic;
+    width: 320px;
+    padding-left: 15px;
+}
+
+#contacts {
+    padding: 20px;
+}
+
+#contacts section {
+    text-align: center;
+}
+
+#contatti {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#testo {
+    height: 80px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#contacts h4 {
+    font-weight: 400;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+#contacts p {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(222, 221, 221);
+    padding: 20px;
+}
+
+footer div {
+    margin-bottom: 20px;
+}
+
+footer h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+footer p {
+    font-weight: 300;
+}
+
+form input {
+    width: 250px;
+    height: 30px;
+}
+
+form .btn h4 {
+    width: 258px;
+    color: #fff;
+    height: 36px;
+    text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+
+    #copy {
+        grid-column: 1/ 4;
+        text-align: center;
+    }
+}
